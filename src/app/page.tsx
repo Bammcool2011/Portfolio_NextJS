@@ -2,13 +2,27 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="contain p-20 min-w-full min-h-screen bg-[#121212] flex flex-col items-center">
+    <div className="contain p-20 min-w-full min-h-screen">
 
-      <section className="w-2/4 content-center justify-center">
-        <header className="flex flex-col items-center  text-center">
-          <h1 className="text-4xl font-bold text-white text-center">
-            Hello, I'm Pumin
-          </h1>
+      <section className="flex">
+        <div className="w-1/2 p-4">
+          <span className="text-4xl text-white leading-relaxed">
+            <h1>Hello! My name is</h1>
+            <h1 className="text-6xl text-white font-semibold">Pumin Whungprasit</h1>
+          </span>
+
+          <p className="text-[#e31b6d] text-2xl mt-6 tracking-widest">
+            Junior Dev • Software Engineer
+          </p>
+
+          <p className="text-white text-2xl font-thin tracking-wide mt-2">
+            I'm a Software Engineering graduate and junior developer.
+            I'm passionate about improving my skills in web development and have experience creating websites for university workshops
+            and contributing to game modding. I'm eager to take on new challenges and grow as a developer,
+            focusing on both frontend and backend technologies to build impactful solutions.</p>
+        </div>
+
+        <div className="w-1/2 p-4">
           <pre className="text-white w-[40%] mx-auto text-center font-mono whitespace-pre-wrap m-12">
             ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀
             ⠀⠀⠀⠀⢀⡴⣆⠀⠀⠀⠀⠀⣠⡀⠀⠀⠀⠀⠀⠀⣼⣿⡗⠀⠀⠀⠀
@@ -20,15 +34,10 @@ export default function Home() {
             ⠛⠒⠛⠉⠉⠀⠀⠀⣴⠟⢃⡴⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
             ⠀⠀⠀⠀⠀⠀⠀⠀⠛⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
           </pre>
-        </header>
-
-        <p className="text-2xl font-bold text-white text-center">
-          I'm a junior developer
-        </p>
-        <p className="text-white text-center mt-2">
-          based in Bangkok, Thailand.
-        </p>
+        </div>
       </section>
+
+
     </div >
   );
 }
