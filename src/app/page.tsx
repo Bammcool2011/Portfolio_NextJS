@@ -1,11 +1,9 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="contain p-20 min-w-full min-h-screen">
 
       <section className="flex">
-        <div className="w-1/2 p-4">
+        <div className="xl:w-1/2 lg:w-full p-4 ">
           <span className="text-4xl text-white leading-relaxed">
             <h1>Hello! My name is</h1>
             <h1 className="text-6xl text-white font-semibold">Pumin Whungprasit</h1>
@@ -22,7 +20,7 @@ export default function Home() {
             focusing on both frontend and backend technologies to build impactful solutions.</p>
         </div>
 
-        <div className="w-1/2 p-4">
+        <div className="w-1/2 p-4 xl:block hidden">
           <pre className="text-white w-[40%] mx-auto text-center font-mono whitespace-pre-wrap m-12">
             ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀
             ⠀⠀⠀⠀⢀⡴⣆⠀⠀⠀⠀⠀⣠⡀⠀⠀⠀⠀⠀⠀⣼⣿⡗⠀⠀⠀⠀
@@ -37,7 +35,7 @@ export default function Home() {
         </div>
       </section>
 
-
+      
     </div >
   );
 }
